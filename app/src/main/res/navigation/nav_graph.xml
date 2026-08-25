@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.studymate.sm.cid.ui.dashboard.DashboardFragment"
+        android:label="Beranda">
+        <action android:id="@+id/action_to_tugas" app:destination="@id/tugasFragment" />
+        <action android:id="@+id/action_to_ujian" app:destination="@id/ujianFragment" />
+        <action android:id="@+id/action_to_jadwal" app:destination="@id/jadwalFragment" />
+        <action android:id="@+id/action_to_keuangan" app:destination="@id/keuanganFragment" />
+        <action android:id="@+id/action_to_target" app:destination="@id/targetFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pelajaranFragment"
+        android:name="com.studymate.sm.cid.ui.pelajaran.PelajaranFragment"
+        android:label="Pelajaran">
+        <action android:id="@+id/action_pelajaran_to_detail" app:destination="@id/pelajaranDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pelajaranDetailFragment"
+        android:name="com.studymate.sm.cid.ui.pelajaran.PelajaranDetailFragment"
+        android:label="Detail Pelajaran">
+        <argument android:name="pelajaranId" app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/tugasFragment"
+        android:name="com.studymate.sm.cid.ui.tugas.TugasFragment"
+        android:label="Tugas" />
+
+    <fragment
+        android:id="@+id/jadwalFragment"
+        android:name="com.studymate.sm.cid.ui.jadwal.JadwalFragment"
+        android:label="Jadwal Pelajaran" />
+
+    <fragment
+        android:id="@+id/lainnyaFragment"
+        android:name="com.studymate.sm.cid.ui.common.LainnyaFragment"
+        android:label="Lainnya">
+        <action android:id="@+id/action_to_ujian2" app:destination="@id/ujianFragment" />
+        <action android:id="@+id/action_to_materi" app:destination="@id/materiFragment" />
+        <action android:id="@+id/action_to_kalender" app:destination="@id/kalenderFragment" />
+        <action android:id="@+id/action_to_target2" app:destination="@id/targetFragment" />
+        <action android:id="@+id/action_to_keuangan2" app:destination="@id/keuanganFragment" />
+        <action android:id="@+id/action_to_kategori" app:destination="@id/kategoriFragment" />
+        <action android:id="@+id/action_to_ai" app:destination="@id/aiAsistenFragment" />
+        <action android:id="@+id/action_to_pengaturan" app:destination="@id/pengaturanFragment" />
+        <action android:id="@+id/action_to_info" app:destination="@id/infoDeveloperFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/ujianFragment"
+        android:name="com.studymate.sm.cid.ui.ujian.UjianFragment"
+        android:label="Ujian &amp; Ulangan" />
+
+    <fragment
+        android:id="@+id/materiFragment"
+        android:name="com.studymate.sm.cid.ui.materi.MateriFragment"
+        android:label="Catatan Materi" />
+
+    <fragment
+        android:id="@+id/kalenderFragment"
+        android:name="com.studymate.sm.cid.ui.kalender.KalenderFragment"
+        android:label="Kalender Akademik" />
+
+    <fragment
+        android:id="@+id/targetFragment"
+        android:name="com.studymate.sm.cid.ui.target.TargetFragment"
+        android:label="Target Belajar" />
+
+    <fragment
+        android:id="@+id/keuanganFragment"
+        android:name="com.studymate.sm.cid.ui.keuangan.KeuanganFragment"
+        android:label="Keuangan Sekolah" />
+
+    <fragment
+        android:id="@+id/kategoriFragment"
+        android:name="com.studymate.sm.cid.ui.kategori.KategoriFragment"
+        android:label="Kategori" />
+
+    <fragment
+        android:id="@+id/aiAsistenFragment"
+        android:name="com.studymate.sm.cid.ui.ai.AiAsistenFragment"
+        android:label="AI Asisten" />
+
+    <fragment
+        android:id="@+id/pengaturanFragment"
+        android:name="com.studymate.sm.cid.ui.pengaturan.PengaturanFragment"
+        android:label="Pengaturan" />
+
+    <fragment
+        android:id="@+id/infoDeveloperFragment"
+        android:name="com.studymate.sm.cid.ui.info.InfoDeveloperFragment"
+        android:label="Info Developer" />
+
+</navigation>
