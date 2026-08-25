@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Study Mate</string>
+    <string name="tagline">Teman Belajar Digital</string>
+
+    <string name="menu_dashboard">Beranda</string>
+    <string name="menu_pelajaran">Pelajaran</string>
+    <string name="menu_tugas">Tugas</string>
+    <string name="menu_jadwal">Jadwal</string>
+    <string name="menu_lainnya">Lainnya</string>
+
+    <string name="tambah">Tambah</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="hapus">Hapus</string>
+    <string name="edit">Edit</string>
+    <string name="belum_ada_data">Belum ada data. Tambahkan sekarang.</string>
+</resources>
