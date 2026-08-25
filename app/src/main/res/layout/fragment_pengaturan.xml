@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <include
+        android:id="@+id/toolbar_include"
+        layout="@layout/toolbar_simple"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_include"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Profil" android:textStyle="bold" android:textColor="@color/navy_900"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:hint="Nama Kamu">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_nama" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_simpan_nama"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="Simpan Nama"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginVertical="20dp" android:background="@color/divider"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="AI Asisten (Gemini API Key)" android:textStyle="bold" android:textColor="@color/navy_900"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Dapatkan API key gratis di Google AI Studio (aistudio.google.com), lalu tempel di sini."
+                android:textSize="12sp" android:textColor="@color/on_surface_muted"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:hint="Gemini API Key">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_api_key" android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_simpan_api_key"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" android:text="Simpan API Key"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Key baru dari AI Studio sekarang diawali &quot;AQ.&quot; (dulu &quot;AIza...&quot;). Keduanya didukung, cukup tempel apa adanya. Pastikan HP terhubung internet (mode pesawat mati) saat memakai AI Asisten."
+                android:textSize="11sp" android:textColor="@color/on_surface_muted"/>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                android:layout_marginVertical="20dp" android:background="@color/divider"/>
+
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Backup &amp; Import Data" android:textStyle="bold" android:textColor="@color/navy_900"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Simpan seluruh data ke file JSON, atau kembalikan dari file backup sebelumnya."
+                android:textSize="12sp" android:textColor="@color/on_surface_muted"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_backup"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:text="Backup Data ke JSON"
+                app:icon="@drawable/ic_backup"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_import"
+                style="@style/Widget.StudyMate.Button.Outlined"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="10dp" android:text="Import Data dari JSON"
+                app:icon="@drawable/ic_restore"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
