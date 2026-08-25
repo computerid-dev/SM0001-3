@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="560dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.StudyMate.InputLayout"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Judul Materi">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_judul" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:text="Mata Pelajaran" android:textColor="@color/on_surface_muted" android:textSize="12sp"/>
+        <Spinner android:id="@+id/spinner_pelajaran" android:layout_width="match_parent" android:layout_height="48dp"
+            android:background="@drawable/bg_card_soft" android:paddingHorizontal="12dp"/>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Bab">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_bab" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="10dp" android:layout_height="1dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Halaman">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_halaman" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.StudyMate.InputLayout"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:hint="Isi Materi / Rangkuman">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_isi" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minLines="3" android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.StudyMate.InputLayout"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:hint="Catatan tambahan (opsional)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_catatan" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minLines="2" android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</ScrollView>
