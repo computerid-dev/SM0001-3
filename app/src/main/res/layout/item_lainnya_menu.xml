@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="16dp"
+    android:background="?attr/selectableItemBackground"
+    android:id="@+id/root_menu_item">
+
+    <ImageView
+        android:id="@+id/icon_menu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_icon_circle_green"
+        android:padding="9dp"
+        android:src="@drawable/ic_exam"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text_label"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="16dp"
+        android:textSize="15sp"
+        android:textColor="@color/on_surface"
+        tools:text="Ujian &amp; Ulangan" />
+
+</LinearLayout>
