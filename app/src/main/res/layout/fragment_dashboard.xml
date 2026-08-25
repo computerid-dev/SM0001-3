@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/navy_900"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/text_sapaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:text="Halo, Nugroho 👋" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/tagline"
+                    android:textColor="#AEBBD1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1.5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="14dp">
+                        <TextView android:id="@+id/text_jumlah_tugas" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="22sp" android:textStyle="bold" android:textColor="@color/navy_900" tools:text="3" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Tugas Aktif" android:textSize="12sp" android:textColor="@color/on_surface_muted"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="1.5dp">
+                    <LinearLayout
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="14dp">
+                        <TextView android:id="@+id/text_jumlah_ujian" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:textSize="22sp" android:textStyle="bold" android:textColor="@color/green_700" tools:text="1" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Ujian Mendatang" android:textSize="12sp" android:textColor="@color/on_surface_muted"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Jadwal Hari Ini"
+                android:textStyle="bold"
+                android:textColor="@color/navy_900" />
+
+            <TextView
+                android:id="@+id/text_jadwal_hari_ini"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_card_soft"
+                android:padding="14dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/on_surface"
+                tools:text="Tidak ada jadwal hari ini." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Tugas Terdekat"
+                android:textStyle="bold"
+                android:textColor="@color/navy_900" />
+
+            <TextView
+                android:id="@+id/text_tugas_terdekat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/bg_card_soft"
+                android:padding="14dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/on_surface"
+                tools:text="Tidak ada tugas." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Ujian Mendatang"
+                android:textStyle="bold"
+                android:textColor="@color/navy_900" />
+
+            <TextView
+                android:id="@+id/text_ujian_terdekat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/bg_card_soft"
+                android:padding="14dp"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/on_surface"
+                tools:text="Tidak ada ujian mendatang." />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
