@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/dashboardFragment"
+        android:icon="@drawable/ic_home"
+        android:title="@string/menu_dashboard" />
+    <item
+        android:id="@+id/pelajaranFragment"
+        android:icon="@drawable/ic_book"
+        android:title="@string/menu_pelajaran" />
+    <item
+        android:id="@+id/tugasFragment"
+        android:icon="@drawable/ic_task"
+        android:title="@string/menu_tugas" />
+    <item
+        android:id="@+id/jadwalFragment"
+        android:icon="@drawable/ic_schedule"
+        android:title="@string/menu_jadwal" />
+    <item
+        android:id="@+id/lainnyaFragment"
+        android:icon="@drawable/ic_more"
+        android:title="@string/menu_lainnya" />
+</menu>
