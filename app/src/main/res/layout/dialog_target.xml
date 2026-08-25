@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="480dp">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.StudyMate.InputLayout"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Nama Target">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_nama" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.StudyMate.InputLayout"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:hint="Deskripsi (opsional)">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_deskripsi" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:minLines="2" android:gravity="top"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="12dp">
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Target (mis. menit/halaman)">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_target" android:inputType="number"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <View android:layout_width="10dp" android:layout_height="1dp"/>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.StudyMate.InputLayout"
+                android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:hint="Progress saat ini">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/input_progress" android:inputType="number"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
